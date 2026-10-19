@@ -1,0 +1,79 @@
+﻿name: Probar Radar SIE Cloud
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r cloud/requirements-seace.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Validar codigo
+        run: |
+          python -m py_compile cloud/flujo_seace.py
+          python -m py_compile cloud/importar_convocatorias_seace.py
+          python -m py_compile cloud/exportar_dashboard_v2.py
+
+      - name: Validar base historica
+        run: |
+          python - <<'PY'
+          import sqlite3
+          from pathlib import Path
+
+          bd = Path(
+              "cloud/data/processed/convocatorias_seace_actuales.db"
+          )
+
+          if not bd.exists():
+              raise RuntimeError("Base historica no encontrada")
+
+          con = sqlite3.connect(bd.as_uri() + "?mode=ro", uri=True)
+
+          try:
+              integridad = con.execute(
+                  "PRAGMA integrity_check"
+              ).fetchone()[0]
+
+              procesos = con.execute(
+                  "SELECT COUNT(*) FROM procesos"
+              ).fetchone()[0]
+
+              cambios = con.execute(
+                  "SELECT COUNT(*) FROM cambios"
+              ).fetchone()[0]
+
+              print("SQLITE_INTEGRITY=", integridad)
+              print("PROCESOS_HISTORICOS=", procesos)
+              print("REGISTROS_CAMBIOS=", cambios)
+
+              if integridad != "ok":
+                  raise RuntimeError("Integridad SQLite incorrecta")
+
+              if procesos < 500:
+                  raise RuntimeError("Historico inferior a 500 procesos")
+
+          finally:
+              con.close()
+          PY
+
+      - name: Resultado
+        run: |
+          echo "RADAR_SIE_CLOUD_TEST=PASS"
