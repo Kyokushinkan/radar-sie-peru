@@ -1,4 +1,4 @@
-"""Consulta y descarga SEACE; ensayo aislado por defecto, sin publicar en GitHub."""
+﻿"""Consulta y descarga SEACE; ensayo aislado por defecto, sin publicar en GitHub."""
 import argparse
 from datetime import datetime
 import hashlib
@@ -112,7 +112,11 @@ def consultar_descargar(destino, desde, hasta, intentos=3):
                     )
 
                     if response is None or response.status >= 400:
-                        raise RuntimeError('SEACE no disponible')
+                        raise RuntimeError(
+                            f'SEACE no disponible; '
+                            f'HTTP={response.status if response else "SIN_RESPUESTA"}; '
+                            f'URL_FINAL={page.url}'
+                        )
 
                     tabs = page.get_by_role('tab')
 
