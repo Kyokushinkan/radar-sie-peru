@@ -45,7 +45,7 @@ jobs:
           if not bd.exists():
               raise RuntimeError("Base historica no encontrada")
 
-          con = sqlite3.connect(bd.as_uri() + "?mode=ro", uri=True)
+          con = sqlite3.connect(bd.resolve().as_uri() + "?mode=ro", uri=True)
 
           try:
               integridad = con.execute(
