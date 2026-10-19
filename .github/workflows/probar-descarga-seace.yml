@@ -1,0 +1,59 @@
+﻿name: Probar descarga SEACE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install -r cloud/requirements-seace.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Probar conexion y descarga SEACE
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/sie-prueba"
+
+          timeout 480s python -u - <<'PY'
+          import sys
+          from pathlib import Path
+
+          sys.path.insert(0, str(Path("cloud").resolve()))
+
+          from flujo_seace import consultar_descargar
+
+          destino = Path(
+              __import__("os").environ["RUNNER_TEMP"]
+          ) / "sie-prueba" / "Lista-Procesos-SIE.xls"
+
+          total = consultar_descargar(
+              destino,
+              "01/09/2026",
+              "30/09/2026",
+              intentos=2
+          )
+
+          print("TOTAL_SEACE=", total)
+          print("ARCHIVO_EXISTE=", destino.is_file())
+          print("ARCHIVO_BYTES=", destino.stat().st_size)
+          print("DESCARGA_SEACE_CLOUD=PASS")
+          PY
+
+      - name: Resultado
+        run: echo "PRUEBA_CONEXION_SEACE=FINALIZADA"
