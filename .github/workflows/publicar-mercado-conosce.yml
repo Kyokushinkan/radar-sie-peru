@@ -63,70 +63,12 @@ jobs:
           print("DESCARGA_CONOSCE=PASS")
           PY
 
-      - name: Verificar cambios en registros existentes
-        shell: bash
-        run: |
-          python - <<'PY'
-          import json
-          from openpyxl import load_workbook
-
-          with open("docs/mercado_items.json", encoding="utf-8") as f:
-              data = json.load(f)
-
-          existing = {
-              (str(r["codigo_convocatoria"]), int(r["numero_item"])): r
-              for r in data["datos"]
-          }
-
-          wb = load_workbook(
-              "conosce_actual.xlsx", read_only=True, data_only=True
-          )
-          try:
-              rows = wb.active.iter_rows(values_only=True)
-              headers = list(next(rows))
-              changed = 0
-              checked = 0
-
-              for values in rows:
-                  d = dict(zip(headers, values))
-                  if not d.get("CODIGOCONVOCATORIA"):
-                      continue
-
-                  key = (
-                      str(d["CODIGOCONVOCATORIA"]).strip(),
-                      int(d["N_ITEM"])
-                  )
-
-                  if key not in existing:
-                      continue
-
-                  checked += 1
-                  old = existing[key]
-
-                  if (
-                      str(d.get("ESTADO_ITEM") or "").strip()
-                      != str(old.get("estado_item") or "").strip()
-                  ):
-                      changed += 1
-
-              print("ITEMS_EXISTENTES_VERIFICADOS=", checked)
-              print("CAMBIOS_DE_ESTADO=", changed)
-
-              if changed:
-                  raise RuntimeError(
-                      "BLOQUEADO: estados historicos modificados"
-                  )
-
-              print("ESTADOS_EXISTENTES=PASS")
-          finally:
-              wb.close()
-          PY
-
       - name: Actualizar JSON
         run: |
-          python cloud/actualizar_mercado_conosce.py \
+          python cloud/reconciliar_mercado_conosce.py \
             --excel conosce_actual.xlsx \
             --json docs/mercado_items.json \
+            --auditoria docs/mercado_cambios.json \
             --aplicar
 
       - name: Validar JSON actualizado
@@ -158,7 +100,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -- docs/mercado_items.json
+          git add -- docs/mercado_items.json docs/mercado_cambios.json
 
           if git diff --cached --quiet; then
             echo "SIN_CAMBIOS_PARA_PUBLICAR=SI"
