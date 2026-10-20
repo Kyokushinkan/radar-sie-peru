@@ -2,8 +2,6 @@ name: Actualizar Mercado SIE CONOSCE
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 13 * * *'
 
 permissions:
   contents: write
