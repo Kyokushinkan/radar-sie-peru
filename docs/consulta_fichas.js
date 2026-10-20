@@ -131,15 +131,22 @@ function celda(tr,valor){
 function consultar(){
  const codigo=$("cf-ficha").value;
  const ficha=fichas.find(f=>f.codigo===codigo);
- if(!ficha){
-  $("cf-estado").textContent="Selecciona una ficha tecnica.";
-  return;
- }
  const d=$("cf-depto").value;
- const nombre=norm(ficha.producto);
- const registros=adjudicaciones.filter(r=>
- (!d||depto(r)===d)&&norm(r.descripcion_item).includes(nombre)
- );
+ const sector=$("cf-sector").value;
+ const q=norm($("cf-buscar").value);
+
+ const nombres=ficha?[]:[...new Set(fichas
+  .filter(f=>(!sector||String(f.codigo||"").startsWith(sector))&&
+    (!q||norm(f.producto).includes(q)||norm(f.codigo).includes(q)))
+  .map(f=>norm(f.producto))
+  .filter(x=>x.length>=5))];
+
+ const registros=adjudicaciones.filter(r=>{
+  if(d&&depto(r)!==d)return false;
+  const descripcion=norm(r.descripcion_item);
+  if(ficha)return descripcion.includes(norm(ficha.producto));
+  return nombres.some(n=>descripcion.includes(n));
+ });
  const body=$("cf-resultados");
  body.replaceChildren();
  const proveedores=new Set();
@@ -182,9 +189,10 @@ function consultar(){
  $("cf-limite").textContent=registros.length>100?
  "Mostrando 100 de "+registros.length+" coincidencias.":"";
  $("cf-estado").textContent=
- "Ficha: "+ficha.producto+" | "+codigo+
+ (ficha?"Ficha: "+ficha.producto+" | "+codigo:
+ "Sector: "+(sectores[sector]||"Todos los sectores"))+
  " | "+registros.length+
- " coincidencias por descripcion. Precios unitarios pendientes de verificacion.";
+ " coincidencias exploratorias por descripcion. Precios unitarios pendientes de verificacion.";
 }
 $("cf-sector").addEventListener("change",cargarFichas);
 $("cf-buscar").addEventListener("input",cargarFichas);
