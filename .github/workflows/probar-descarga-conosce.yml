@@ -1,0 +1,63 @@
+﻿name: Probar descarga CONOSCE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verificar descarga oficial
+        shell: bash
+        run: |
+          python - <<'PY'
+          import urllib.request
+          import zipfile
+          import io
+
+          url = (
+              "https://conosce.osce.gob.pe/buscador/assets/"
+              "67ae6c4a/reportes/adjudicaciones/2026/"
+              "CONOSCE_ADJUDICACIONES_SIE2026_0.xlsx"
+          )
+
+          request = urllib.request.Request(
+              url,
+              headers={"User-Agent": "Mozilla/5.0"}
+          )
+
+          with urllib.request.urlopen(request, timeout=60) as response:
+              content = response.read(20 * 1024 * 1024 + 1)
+              status = response.status
+
+          print("HTTP_STATUS=", status)
+          print("BYTES_DESCARGADOS=", len(content))
+
+          if len(content) > 20 * 1024 * 1024:
+              raise RuntimeError("ARCHIVO_EXCEDE_LIMITE")
+
+          with zipfile.ZipFile(io.BytesIO(content)) as z:
+              if z.testzip() is not None:
+                  raise RuntimeError("ZIP_CORRUPTO")
+
+              names = set(z.namelist())
+
+              if (
+                  "[Content_Types].xml" not in names
+                  or "xl/workbook.xml" not in names
+              ):
+                  raise RuntimeError("NO_ES_EXCEL_VALIDO")
+
+          print("EXCEL_VALIDO=True")
+          print("DESCARGA_CONOSCE_CLOUD=PASS")
+          PY
