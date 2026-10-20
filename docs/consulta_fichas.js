@@ -62,7 +62,7 @@ adjudicaciones historicas y precios por unidad de medida.</p>
 <p class="small" id="cf-limite"></p>
 <p class="small">Las coincidencias por descripcion son orientativas,
 no acreditan el uso de una ficha CUBSO especifica.
-Los precios se calculan a partir del monto y cantidad registrados;
+Los precios unitarios requieren verificar que el monto y la cantidad correspondan al producto;
 no se comparan unidades ni presentaciones diferentes.</p>`;
 
 const biblioteca=$("biblioteca-fichas");
@@ -145,24 +145,15 @@ function consultar(){
  const proveedores=new Set();
  const entidades=new Set();
  const precios=new Map();
-
  for(const r of registros){
   proveedores.add(r.proveedor_nombre_original||"");
   entidades.add(r.entidad_nombre_original||"");
-  const cantidad=Number(r.cantidad_decimal);
-  const monto=Number(r.monto_adjudicado_centimos)/100;
-  const unidad=String(r.unidad_original||"").trim().toUpperCase();
-  if(cantidad>0&&monto>0&&unidad){
-   if(!precios.has(unidad))precios.set(unidad,[]);
-   precios.get(unidad).push(monto/cantidad);
-  }
- }
- $("cf-resumen").replaceChildren();
+ } $("cf-resumen").replaceChildren();
  for(const [titulo,valor] of [
   ["Coincidencias por descripcion",registros.length],
   ["Entidades",entidades.size],
   ["Proveedores",proveedores.size],
-  ["Unidades de medida",precios.size]
+  ["Unidades registradas",new Set(registros.map(r=>r.unidad_original)).size]
  ]){
   const card=document.createElement("div");
   card.className="card";
@@ -178,28 +169,22 @@ function consultar(){
   const cantidad=Number(r.cantidad_decimal);
   const monto=Number(r.monto_adjudicado_centimos)/100;
   const unidad=r.unidad_original||"No indicada";
-  const precio=cantidad>0&&monto>0?soles(monto/cantidad):"No calculable";
+  const precio="No verificable";
   celda(tr,(r.entidad_nombre_original||"")+" / "+depto(r));
   celda(tr,r.proveedor_nombre_original);
   celda(tr,r.descripcion_item);
   celda(tr,(r.cantidad_decimal||"")+" "+unidad);
-  celda(tr,precio+" / "+unidad);
+  celda(tr,precio);
   celda(tr,soles(monto));
   celda(tr,(r.fecha_buenapro||"")+" / "+(r.codigo_convocatoria||""));
   body.appendChild(tr);
  }
  $("cf-limite").textContent=registros.length>100?
  "Mostrando 100 de "+registros.length+" coincidencias.":"";
- const rangos=[...precios].map(([unidad,arr])=>{
-  const orden=[...arr].sort((a,b)=>a-b);
-  return unidad+": "+soles(orden[0])+" a "+
-  soles(orden[orden.length-1])+" ("+arr.length+" registros)";
- });
  $("cf-estado").textContent=
  "Ficha: "+ficha.producto+" | "+codigo+
- " | "+registros.length+" coincidencias por descripcion. "+
- (rangos.length?"Rangos por unidad: "+rangos.join("; "):
- "Sin precios calculables.");
+ " | "+registros.length+
+ " coincidencias por descripcion. Precios unitarios pendientes de verificacion.";
 }
 $("cf-sector").addEventListener("change",cargarFichas);
 $("cf-buscar").addEventListener("input",cargarFichas);
