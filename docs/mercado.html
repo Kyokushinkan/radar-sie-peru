@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar SIE Peru - Inteligencia Comercial</title>
+<style>
+:root{font-family:Segoe UI,Arial,sans-serif;color:#e8eef8;background:#0a1220}
+*{box-sizing:border-box}
+body{margin:0;padding:28px;max-width:1450px;margin-inline:auto}
+h1{font-size:30px;margin:8px 0}
+h2{font-size:19px;margin:0 0 16px}
+p,.muted{color:#9fb0c9}
+.panel{background:#111e31;border:1px solid #293951;border-radius:14px;padding:22px;margin-top:22px}
+.filters{display:flex;gap:14px;flex-wrap:wrap;align-items:end}
+label{display:flex;flex-direction:column;gap:7px;font-size:13px;color:#b9c9de}
+input,select{background:#091525;color:#fff;border:1px solid #39506b;border-radius:8px;padding:11px;min-width:170px}
+input{min-width:280px}
+button{background:#2767c9;color:white;border:0;border-radius:8px;padding:11px 16px;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin-top:20px}
+.card{background:#17273e;border-radius:11px;padding:17px}
+.card strong{display:block;font-size:24px;margin-top:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:12px;border-bottom:1px solid #2a3c54}
+th{color:#b5c9e1}
+.right{text-align:right}
+.tablewrap{overflow-x:auto}
+.chart{display:flex;align-items:end;gap:10px;height:255px;overflow-x:auto;padding-top:22px}
+.month{flex:1;min-width:58px;text-align:center;font-size:12px;color:#b6c9df}
+.barbox{height:195px;display:flex;align-items:end;justify-content:center}
+.bar{background:linear-gradient(180deg,#4aa8ff,#2364bc);width:75%;border-radius:6px 6px 0 0;min-height:2px}
+.small{font-size:12px;color:#a9bdd7;margin-top:8px}
+.status{margin-top:15px;color:#9fd7b4}
+.error{color:#ffb4b4}
+</style>
+</head>
+<body>
+
+<div class="muted">RADAR SIE PERU / VERSION DE DESARROLLO</div>
+<h1>Inteligencia comercial de adjudicaciones</h1>
+<p>Datos historicos CONOSCE. Montos adjudicados, no precios unitarios comparables.</p>
+
+<section class="panel">
+<h2>Buscar oportunidades y competidores</h2>
+<div class="filters">
+<label>Producto o descripcion
+<input id="search" value="aceite" placeholder="Ejemplo: aceite">
+</label>
+<label>Departamento
+<select id="dept"><option value="">Todos</option></select>
+</label>
+<label>Alcance de busqueda
+<select id="scope">
+<option value="item">Solo descripcion del item</option>
+<option value="all">Item o descripcion del proceso</option>
+</select>
+</label>
+<label>Orden de proveedores
+<select id="order">
+<option value="desc">Mayor monto primero</option>
+<option value="asc">Menor monto primero</option>
+</select>
+</label>
+<button id="clear">Limpiar</button>
+</div>
+
+<div class="cards">
+<div class="card"><span>Items encontrados</span><strong id="items">-</strong></div>
+<div class="card"><span>Proveedores</span><strong id="suppliers">-</strong></div>
+<div class="card"><span>Monto adjudicado</span><strong id="amount">-</strong></div>
+<div class="card"><span>Departamentos</span><strong id="departments">-</strong></div>
+</div>
+<div class="status" id="status">Cargando datos...</div>
+</section>
+
+<section class="panel">
+<h2>Actividad mensual del producto seleccionado</h2>
+<p class="small">Montos agrupados por fecha de buena pro.</p>
+<div id="chart" class="chart"></div>
+</section>
+
+<section class="panel">
+<h2>Ranking de proveedores adjudicados</h2>
+<p class="small">Ordenado por monto total adjudicado dentro de los filtros seleccionados.</p>
+<div class="tablewrap">
+<table>
+<thead><tr>
+<th>Proveedor</th>
+<th class="right">Items</th>
+<th class="right">Monto adjudicado</th>
+</tr></thead>
+<tbody id="ranking"></tbody>
+</table>
+</div>
+</section>
+
+<script>
+"use strict";
+let rows=[];
+
+const $=id=>document.getElementById(id);
+const fmt=new Intl.NumberFormat("es-PE");
+const money=n=>"S/ "+new Intl.NumberFormat("es-PE",{
+ minimumFractionDigits:2,maximumFractionDigits:2
+}).format(n/100);
+
+function norm(v){
+ return String(v??"").normalize("NFD")
+ .replace(/[\u0300-\u036f]/g,"").toLowerCase();
+}
+
+function department(r){
+ return r.departamento_item_original||
+ r.entidad_departamento_original||"No indicado";
+}
+
+function render(){
+ const q=norm($("search").value.trim());
+ const dept=$("dept").value;
+ const scope=$("scope").value;
+ const order=$("order").value;
+
+ const filtered=rows.filter(r=>{
+  const item=norm(r.descripcion_item);
+  const process=norm(r.descripcion_proceso);
+  const match=!q||item.includes(q)||(scope==="all"&&process.includes(q));
+  return match&&(!dept||department(r)===dept);
+ });
+
+ const suppliers=new Map();
+ const monthly=new Map();
+ const depts=new Set();
+ let total=0;
+
+ for(const r of filtered){
+  const cents=Number(r.monto_adjudicado_centimos)||0;
+  total+=cents;
+  depts.add(department(r));
+
+  const name=r.proveedor_nombre_original||"No indicado";
+  const key=r.proveedor_id!=null?String(r.proveedor_id):"name:"+name;
+  if(!suppliers.has(key)){
+   suppliers.set(key,{name,count:0,cents:0});
+  }
+  const s=suppliers.get(key);
+  s.count++;
+  s.cents+=cents;
+
+  const date=String(r.fecha_buenapro||"");
+  if(/^\d{4}-\d{2}/.test(date)){
+   const month=date.slice(0,7);
+   if(!monthly.has(month))monthly.set(month,{count:0,cents:0});
+   const m=monthly.get(month);
+   m.count++;
+   m.cents+=cents;
+  }
+ }
+
+ $("items").textContent=fmt.format(filtered.length);
+ $("suppliers").textContent=fmt.format(suppliers.size);
+ $("amount").textContent=money(total);
+ $("departments").textContent=fmt.format(depts.size);
+
+ const ranked=[...suppliers.values()].sort((a,b)=>
+  (order==="desc"?b.cents-a.cents:a.cents-b.cents)||
+  a.name.localeCompare(b.name,"es")
+ );
+
+ const body=$("ranking");
+ body.replaceChildren();
+ for(const s of ranked){
+  const tr=document.createElement("tr");
+  for(const [value,right] of [
+   [s.name,false],[fmt.format(s.count),true],[money(s.cents),true]
+  ]){
+   const td=document.createElement("td");
+   td.textContent=value;
+   if(right)td.className="right";
+   tr.appendChild(td);
+  }
+  body.appendChild(tr);
+ }
+
+ const chart=$("chart");
+ chart.replaceChildren();
+ const months=[...monthly.entries()].sort((a,b)=>a[0].localeCompare(b[0]));
+ const max=Math.max(1,...months.map(x=>x[1].cents));
+
+ for(const [month,data] of months){
+  const col=document.createElement("div");
+  col.className="month";
+
+  const box=document.createElement("div");
+  box.className="barbox";
+
+  const bar=document.createElement("div");
+  bar.className="bar";
+  bar.style.height=Math.max(2,data.cents/max*100)+"%";
+  bar.title=month+" | "+money(data.cents)+" | "+data.count+" items";
+
+  box.appendChild(bar);
+  col.appendChild(box);
+
+  const label=document.createElement("div");
+  label.textContent=month;
+  col.appendChild(label);
+
+  const count=document.createElement("div");
+  count.className="small";
+  count.textContent=data.count+" items";
+  col.appendChild(count);
+
+  chart.appendChild(col);
+ }
+
+ $("status").textContent=fmt.format(filtered.length)+
+ " registros encontrados. Fuente: CONOSCE historico.";
+}
+
+async function init(){
+ try{
+  const response=await fetch("mercado_items.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("HTTP "+response.status);
+
+  const payload=await response.json();
+  if(!Array.isArray(payload.datos))throw new Error("JSON sin datos");
+
+  rows=payload.datos;
+
+  const departments=[...new Set(rows.map(department))]
+   .sort((a,b)=>a.localeCompare(b,"es"));
+
+  for(const d of departments){
+   const option=document.createElement("option");
+   option.value=d;
+   option.textContent=d;
+   $("dept").appendChild(option);
+  }
+
+  for(const id of ["search","dept","scope","order"]){
+   $(id).addEventListener(id==="search"?"input":"change",render);
+  }
+
+  $("clear").addEventListener("click",()=>{
+   $("search").value="";
+   $("dept").value="";
+   $("scope").value="item";
+   $("order").value="desc";
+   render();
+  });
+
+  render();
+ }catch(e){
+  $("status").textContent="ERROR: "+e.message;
+  $("status").className="status error";
+ }
+}
+init();
+</script>
+
+<section class="panel" id="biblioteca-fichas">
+<h2>Biblioteca de fichas tecnicas SIE</h2>
+<p>Consulta productos, codigos y versiones registradas.
+La vigencia actual requiere verificacion oficial.</p>
+
+<div class="filters">
+<label>Buscar ficha o codigo
+<input id="ficha-search"
+placeholder="Ejemplo: aceite vegetal">
+</label>
+
+<label>Orden
+<select id="ficha-order">
+<option value="name">Nombre A-Z</option>
+<option value="version">Version registrada</option>
+</select>
+</label>
+
+<button id="ficha-clear">Limpiar busqueda</button>
+</div>
+
+<p class="status" id="ficha-status">
+Cargando biblioteca...
+</p>
+
+<div class="tablewrap">
+<table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Codigo</th>
+<th>Version registrada</th>
+<th>Vigencia</th>
+<th>Ficha oficial</th>
+</tr>
+</thead>
+<tbody id="ficha-results"></tbody>
+</table>
+</div>
+
+<p class="small" id="ficha-limit"></p>
+</section>
+
+<script>
+(function(){
+"use strict";
+
+const get=id=>document.getElementById(id);
+let fichas=[];
+
+function norm(value){
+ return String(value??"")
+ .normalize("NFD")
+ .replace(/[\u0300-\u036f]/g,"")
+ .toLowerCase();
+}
+
+function renderFichas(){
+ const query=norm(get("ficha-search").value.trim());
+ const order=get("ficha-order").value;
+
+ const found=fichas.filter(f=>
+  norm(f.producto).includes(query)||
+  norm(f.codigo).includes(query)
+ );
+
+ found.sort((a,b)=>{
+  if(order==="version"){
+   return (Number(b.version)||0)-(Number(a.version)||0)||
+   a.producto.localeCompare(b.producto,"es");
+  }
+  return a.producto.localeCompare(b.producto,"es");
+ });
+
+ const body=get("ficha-results");
+ body.replaceChildren();
+
+ for(const f of found.slice(0,100)){
+  const tr=document.createElement("tr");
+
+  for(const value of [
+   f.producto,
+   f.codigo,
+   f.version,
+   f.vigencia
+  ]){
+   const td=document.createElement("td");
+   td.textContent=value||"No indicado";
+   tr.appendChild(td);
+  }
+
+  const td=document.createElement("td");
+
+  if(f.enlace){
+   const a=document.createElement("a");
+   a.href=f.enlace;
+   a.target="_blank";
+   a.rel="noopener noreferrer";
+   a.textContent="Abrir en SEACE";
+   a.style.color="#77bbff";
+   td.appendChild(a);
+  }else{
+   td.textContent="Sin enlace registrado";
+  }
+
+  tr.appendChild(td);
+  body.appendChild(tr);
+ }
+
+ get("ficha-status").textContent=
+  found.length+" fichas encontradas de "+
+  fichas.length+" registradas.";
+
+ get("ficha-limit").textContent=
+  found.length>100
+  ?"Se muestran las primeras 100. Refina la busqueda para ver otras."
+  :"";
+}
+
+async function loadFichas(){
+ try{
+  const response=await fetch("fichas_sie.json",{
+   cache:"no-store"
+  });
+
+  if(!response.ok){
+   throw new Error("HTTP "+response.status);
+  }
+
+  const payload=await response.json();
+
+  if(!Array.isArray(payload.fichas)){
+   throw new Error("Formato de catalogo invalido");
+  }
+
+  fichas=payload.fichas;
+
+  get("ficha-search").addEventListener(
+   "input",renderFichas
+  );
+
+  get("ficha-order").addEventListener(
+   "change",renderFichas
+  );
+
+  get("ficha-clear").addEventListener("click",()=>{
+   get("ficha-search").value="";
+   get("ficha-order").value="name";
+   renderFichas();
+  });
+
+  renderFichas();
+
+ }catch(error){
+  get("ficha-status").textContent=
+   "ERROR: "+error.message;
+ }
+}
+
+loadFichas();
+})();
+</script>
+
+</body>
+</html>
