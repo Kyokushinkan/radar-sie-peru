@@ -347,10 +347,17 @@ function renderFichas(){
 
   for(const value of [
    f.producto,
-   f.codigo,
-   f.version,
-   f.vigencia
-  ]){
+    f.codigo,
+    f.version,
+    f.vigencia,
+    (
+      window.RADAR_SIE_VERIFICACIONES?.[String(f.codigo)]?.tipo === "VERSION_ACTUALIZADA"
+        ? "Aprobada en SEACE - versión actualizada"
+        : window.RADAR_SIE_VERIFICACIONES?.[String(f.codigo)]?.tipo === "VERSION_REGISTRADA"
+          ? "Aprobada en SEACE - versión registrada"
+          : "Sin verificación estructurada reciente"
+    )
+]){
    const td=document.createElement("td");
    td.textContent=value||"No indicado";
    tr.appendChild(td);

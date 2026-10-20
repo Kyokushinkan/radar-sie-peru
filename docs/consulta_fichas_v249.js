@@ -71,7 +71,7 @@ Preparando explorador...
 <th>Producto / ficha tecnica</th>
 <th>Codigo CUBSO</th>
 <th>Version</th>
-<th>Vigencia registrada</th>
+<th>Vigencia registrada</th><th>Verificación SEACE</th>
 <th>Ficha oficial</th>
 <th>Accion comercial</th>
 </tr>
