@@ -139,9 +139,8 @@ def main():
     if len(existing) < 6209:
         raise ValueError("JSON historico menor al minimo validado")
     if missing:
-        raise ValueError(
-            "BLOQUEADO: Excel no contiene todos los items historicos"
-        )
+        print("HISTORICOS_CONSERVADOS=", len(missing))
+        print("POLITICA=NO_ELIMINAR_HISTORICOS")
 
     provider_ids = {}
     max_id = 0
