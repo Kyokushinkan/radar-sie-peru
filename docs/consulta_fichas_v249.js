@@ -71,7 +71,7 @@ Preparando explorador...
 <th>Producto / ficha tecnica</th>
 <th>Codigo CUBSO</th>
 <th>Version</th>
-<th>Vigencia registrada</th><th>Verificación SEACE</th>
+<th>Vigencia registrada</th><th>Verificación SEACE</th><th>Publicación SEACE</th>
 <th>Ficha oficial</th>
 <th>Accion comercial</th>
 </tr>
@@ -452,7 +452,7 @@ function renderExplorador(){
   celda(tr,f.producto);
   celda(tr,f.codigo);
   celda(tr,f.version);
-  celda(tr,f.vigencia);
+  celda(tr, "No confirmada");
 const verificacion = window.RADAR_SIE_VERIFICACIONES?.[String(f.codigo)];
 const etiqueta = verificacion?.tipo === "VERSION_ACTUALIZADA"
   ? "Aprobada en SEACE - versión actualizada"
@@ -460,6 +460,7 @@ const etiqueta = verificacion?.tipo === "VERSION_ACTUALIZADA"
     ? "Aprobada en SEACE - versión registrada"
     : "Sin verificación estructurada reciente";
 celda(tr,etiqueta);
+  celda(tr, verificacion?.fecha_publicacion || "No disponible");
 
   const enlaceTd=document.createElement("td");
 
