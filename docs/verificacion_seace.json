@@ -1,0 +1,1033 @@
+﻿{
+    "version":  "V2.13.4",
+    "total_catalogo":  1730,
+    "verificadas_seace":  146,
+    "version_actualizada":  73,
+    "version_registrada":  73,
+    "sin_verificacion_estructurada":  1584,
+    "vigencia_global":  "NO_CONFIRMADA",
+    "evidencias":  {
+                       "5011151300392503":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392503",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3011160100392241":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3011160100392241",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5140220400360342":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5140220400360342",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300133977":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300133977",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111161400060193":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  12,
+                                                "codigo":  "5111161400060193",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392518":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392518",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111161700060100":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5111161700060100",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110232600059945":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5110232600059945",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392635":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392635",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392694":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392694",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5113160300060321":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5113160300060321",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392683":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392683",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5117160500061475":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5117160500061475",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392517":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392517",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5138480200058736":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  4,
+                                                "codigo":  "5138480200058736",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114171600061954":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5114171600061954",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110234400196489":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5110234400196489",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111161700060103":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5111161700060103",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5129200900197741":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5129200900197741",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5117180200061357":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  8,
+                                                "codigo":  "5117180200061357",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392696":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392696",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5115151000196617":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5115151000196617",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392511":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392511",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392522":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392522",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1510150900392658":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1510150900392658",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300392513":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392513",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392520":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392520",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392631":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392631",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111251900263591":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5111251900263591",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392684":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392684",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111172200196553":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  12,
+                                                "codigo":  "5111172200196553",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392521":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392521",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5112171000060464":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5112171000060464",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111172300060110":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  12,
+                                                "codigo":  "5111172300060110",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5118182700061550":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5118182700061550",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392633":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392633",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1017150700392444":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1017150700392444",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110240200061712":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5110240200061712",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392686":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392686",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392512":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392512",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300392514":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392514",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392523":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392523",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114152500059144":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5114152500059144",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392519":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392519",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392629":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392629",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110220900059707":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5110220900059707",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111200800196609":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5111200800196609",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5116161500059002":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5116161500059002",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120200200061791":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5120200200061791",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392640":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392640",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5118350500061611":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  8,
+                                                "codigo":  "5118350500061611",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5121160600059090":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5121160600059090",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392645":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392645",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5112171500060495":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5112171500060495",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392685":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392685",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111182000060104":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5111182000060104",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3011160100337726":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3011160100337726",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392634":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392634",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5119150700061258":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5119150700061258",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1017150700392443":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1017150700392443",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110191200059913":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5110191200059913",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5112180500060518":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5112180500060518",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392632":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392632",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300392510":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392510",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114401400062583":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  7,
+                                                "codigo":  "5114401400062583",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392687":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392687",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392638":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392638",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5138480200058734":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  4,
+                                                "codigo":  "5138480200058734",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1510150900392657":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1510150900392657",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392643":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392643",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114152500059145":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  14,
+                                                "codigo":  "5114152500059145",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392636":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392636",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392641":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392641",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392509":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392509",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5118182700061547":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5118182700061547",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160200392630":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160200392630",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120330100278403":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5120330100278403",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5134320100382880":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5134320100382880",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5117160500061473":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5117160500061473",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5119150700061259":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5119150700061259",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5116161500059000":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5116161500059000",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392644":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392644",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114150500233333":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5114150500233333",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5144200400060150":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  7,
+                                                "codigo":  "5144200400060150",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1235231100392139":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1235231100392139",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392507":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392507",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110240200197574":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5110240200197574",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114170200061956":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5114170200061956",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300392501":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392501",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5119151500061255":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5119151500061255",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300233756":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300233756",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011200500133909":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011200500133909",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120330100330403":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5120330100330403",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5118350500061609":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5118350500061609",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5112171500129758":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5112171500129758",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392646":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392646",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392505":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392505",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1510150400011996":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1510150400011996",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392691":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392691",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392639":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392639",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300392516":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392516",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "1510150900392656":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "1510150900392656",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392642":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392642",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5134230400331477":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5134230400331477",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5144200100060068":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  7,
+                                                "codigo":  "5144200100060068",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392524":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392524",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392506":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392506",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392693":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392693",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5311160100392637":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5311160100392637",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5128310400123957":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  4,
+                                                "codigo":  "5128310400123957",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392688":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392688",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5112450300061574":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5112450300061574",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392515":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392515",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5134380300349674":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  7,
+                                                "codigo":  "5134380300349674",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151500392504":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151500392504",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5134320100196499":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5134320100196499",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5119190500197943":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5119190500197943",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114151800196198":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5114151800196198",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5140220400360343":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5140220400360343",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120330100331483":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  5,
+                                                "codigo":  "5120330100331483",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111182400060058":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  4,
+                                                "codigo":  "5111182400060058",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111180400060183":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5111180400060183",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114170200061953":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5114170200061953",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120151600371578":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  2,
+                                                "codigo":  "5120151600371578",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5128150700196434":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5128150700196434",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5119190500196662":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  13,
+                                                "codigo":  "5119190500196662",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114150600059157":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5114150600059157",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114161600062011":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5114161600062011",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5117150200197286":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5117150200197286",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392695":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392695",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5110180700059851":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5110180700059851",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5011151300392502":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "5011151300392502",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5134230400331476":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  6,
+                                                "codigo":  "5134230400331476",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5116152500129733":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5116152500129733",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114151700059107":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  9,
+                                                "codigo":  "5114151700059107",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392690":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392690",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5118175200062067":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  12,
+                                                "codigo":  "5118175200062067",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114150400059190":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  10,
+                                                "codigo":  "5114150400059190",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120180200060063":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  8,
+                                                "codigo":  "5120180200060063",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5112170800060499":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5112170800060499",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392692":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392692",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392697":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392697",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5114210600058826":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  11,
+                                                "codigo":  "5114210600058826",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "3012170200392689":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  1,
+                                                "codigo":  "3012170200392689",
+                                                "tipo":  "VERSION_REGISTRADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5111200300060195":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  6,
+                                                "codigo":  "5111200300060195",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            },
+                       "5120240900060218":  {
+                                                "estado_seace":  "Aprobada",
+                                                "version_verificada":  2,
+                                                "codigo":  "5120240900060218",
+                                                "tipo":  "VERSION_ACTUALIZADA",
+                                                "vigencia_juridica":  "NO_CONFIRMADA"
+                                            }
+                   }
+}

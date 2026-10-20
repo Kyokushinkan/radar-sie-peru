@@ -453,6 +453,13 @@ function renderExplorador(){
   celda(tr,f.codigo);
   celda(tr,f.version);
   celda(tr,f.vigencia);
+const verificacion = window.RADAR_SIE_VERIFICACIONES?.[String(f.codigo)];
+const etiqueta = verificacion?.tipo === "VERSION_ACTUALIZADA"
+  ? "Aprobada en SEACE - versión actualizada"
+  : verificacion?.tipo === "VERSION_REGISTRADA"
+    ? "Aprobada en SEACE - versión registrada"
+    : "Sin verificación estructurada reciente";
+celda(tr,etiqueta);
 
   const enlaceTd=document.createElement("td");
 
