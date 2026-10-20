@@ -1,0 +1,173 @@
+name: Actualizar Mercado SIE CONOSCE
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mercado-sie-conosce
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: python -m pip install openpyxl==3.1.5
+
+      - name: Descargar Excel CONOSCE
+        shell: bash
+        run: |
+          python - <<'PY'
+          import urllib.request
+          import zipfile
+          from pathlib import Path
+
+          url = (
+              "https://conosce.osce.gob.pe/buscador/assets/"
+              "67ae6c4a/reportes/adjudicaciones/2026/"
+              "CONOSCE_ADJUDICACIONES_SIE2026_0.xlsx"
+          )
+          path = Path("conosce_actual.xlsx")
+          req = urllib.request.Request(
+              url, headers={"User-Agent": "Mozilla/5.0"}
+          )
+
+          with urllib.request.urlopen(req, timeout=90) as response:
+              with path.open("wb") as output:
+                  while True:
+                      chunk = response.read(1024 * 1024)
+                      if not chunk:
+                          break
+                      output.write(chunk)
+                      if output.tell() > 20 * 1024 * 1024:
+                          raise RuntimeError("Excel supera limite")
+
+          if not zipfile.is_zipfile(path):
+              raise RuntimeError("Excel no valido")
+
+          print("DESCARGA_CONOSCE=PASS")
+          PY
+
+      - name: Verificar cambios en registros existentes
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from openpyxl import load_workbook
+
+          with open("docs/mercado_items.json", encoding="utf-8") as f:
+              data = json.load(f)
+
+          existing = {
+              (str(r["codigo_convocatoria"]), int(r["numero_item"])): r
+              for r in data["datos"]
+          }
+
+          wb = load_workbook(
+              "conosce_actual.xlsx", read_only=True, data_only=True
+          )
+          try:
+              rows = wb.active.iter_rows(values_only=True)
+              headers = list(next(rows))
+              changed = 0
+              checked = 0
+
+              for values in rows:
+                  d = dict(zip(headers, values))
+                  if not d.get("CODIGOCONVOCATORIA"):
+                      continue
+
+                  key = (
+                      str(d["CODIGOCONVOCATORIA"]).strip(),
+                      int(d["N_ITEM"])
+                  )
+
+                  if key not in existing:
+                      continue
+
+                  checked += 1
+                  old = existing[key]
+
+                  if (
+                      str(d.get("ESTADO_ITEM") or "").strip()
+                      != str(old.get("estado_item") or "").strip()
+                  ):
+                      changed += 1
+
+              print("ITEMS_EXISTENTES_VERIFICADOS=", checked)
+              print("CAMBIOS_DE_ESTADO=", changed)
+
+              if changed:
+                  raise RuntimeError(
+                      "BLOQUEADO: estados historicos modificados"
+                  )
+
+              print("ESTADOS_EXISTENTES=PASS")
+          finally:
+              wb.close()
+          PY
+
+      - name: Actualizar JSON
+        run: |
+          python cloud/actualizar_mercado_conosce.py \
+            --excel conosce_actual.xlsx \
+            --json docs/mercado_items.json \
+            --aplicar
+
+      - name: Validar JSON actualizado
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+
+          with open("docs/mercado_items.json", encoding="utf-8") as f:
+              data = json.load(f)
+
+          records = data["datos"]
+          keys = [
+              (r["codigo_convocatoria"], r["numero_item"])
+              for r in records
+          ]
+
+          assert len(keys) == len(set(keys))
+          assert len(records) >= 6209
+          assert data["resumen"]["items"] == len(records)
+
+          print("ITEMS_VALIDADOS=", len(records))
+          print("VALIDACION_PUBLICACION=PASS")
+          PY
+
+      - name: Publicar solamente Mercado SIE
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -- docs/mercado_items.json
+
+          if git diff --cached --quiet; then
+            echo "SIN_CAMBIOS_PARA_PUBLICAR=SI"
+            exit 0
+          fi
+
+          git commit -m "Actualizar adjudicaciones Mercado SIE desde CONOSCE"
+          git push origin HEAD:main
+
+          echo "PUBLICACION_MERCADO_SIE=PASS"
