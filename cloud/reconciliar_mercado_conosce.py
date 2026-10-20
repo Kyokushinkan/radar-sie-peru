@@ -111,7 +111,24 @@ def main():
         for field, value in incoming.items():
             if field in ("codigo_convocatoria", "numero_item"):
                 continue
-            if old.get(field) != value:
+            anterior = old.get(field)
+
+            if field == "cantidad_decimal":
+                from decimal import Decimal
+                try:
+                    equivalente = abs(
+                        Decimal(str(anterior)) - Decimal(str(value))
+                    ) <= Decimal("0.00000001")
+                except (ValueError, TypeError, ArithmeticError):
+                    equivalente = anterior == value
+            elif isinstance(anterior, str) or isinstance(value, str):
+                equivalente = ("" if anterior is None else str(anterior).strip()) == (
+                    "" if value is None else str(value).strip()
+                )
+            else:
+                equivalente = anterior == value
+
+            if not equivalente:
                 differences[field] = {
                     "antes": old.get(field),
                     "despues": value,
