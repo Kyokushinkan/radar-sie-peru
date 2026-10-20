@@ -1,0 +1,57 @@
+name: Validar Mercado SIE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validar exportador
+        run: |
+          python -m py_compile cloud/exportar_mercado_sie.py
+
+      - name: Verificar JSON publicados
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          raiz = Path("docs")
+
+          for nombre, campo, minimo in (
+              ("mercado_items.json", "datos", 6209),
+              ("fichas_sie.json", "fichas", 1730),
+          ):
+              ruta = raiz / nombre
+
+              if not ruta.is_file():
+                  raise RuntimeError(f"Archivo ausente: {ruta}")
+
+              with ruta.open(encoding="utf-8") as f:
+                  datos = json.load(f)
+
+              cantidad = len(datos[campo])
+
+              print(f"{nombre}: {cantidad} registros")
+
+              if cantidad < minimo:
+                  raise RuntimeError(
+                      f"Cantidad inferior al minimo: {nombre}"
+                  )
+
+          print("VALIDACION_MERCADO_SIE=PASS")
+          PY
