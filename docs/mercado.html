@@ -342,7 +342,7 @@ function renderFichas(){
  const body=get("ficha-results");
  body.replaceChildren();
 
- for(const f of found.slice(0,100)){
+ for(const f of found){
   const tr=document.createElement("tr");
 
   for(const value of [
@@ -379,9 +379,7 @@ function renderFichas(){
   fichas.length+" registradas.";
 
  get("ficha-limit").textContent=
-  found.length>100
-  ?"Se muestran las primeras 100. Refina la busqueda para ver otras."
-  :"";
+  "";
 }
 
 async function loadFichas(){
@@ -428,6 +426,7 @@ loadFichas();
 })();
 </script>
 
-<script src="consulta_fichas_v237.js" defer></script>
+<script src="consulta_fichas_v239.js" defer></script>
+<script src="paginacion_global_v239.js" defer></script>
 </body>
 </html>
