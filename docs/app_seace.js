@@ -1,4 +1,4 @@
-﻿
+
 function radarSieUrlConsulta(nomenclatura) {
     const base = "https://prod2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml";
     const codigo = String(nomenclatura ?? "").trim();
@@ -17,9 +17,43 @@ function radarSieUrlConsulta(nomenclatura) {
   const cut = document.getElementById('seace-cut');
   const body = document.getElementById('seace-body');
   let rows = [], page = 0;
+  // RADAR_SIE_FILTRO_DEPARTAMENTO_V1
+  const department = document.getElementById('seace-department');
+
+  const nombresDepartamentos = [
+    'Amazonas','Áncash','Apurímac','Arequipa','Ayacucho',
+    'Cajamarca','Callao','Cusco','Huancavelica','Huánuco',
+    'Ica','Junín','La Libertad','Lambayeque','Lima',
+    'Loreto','Madre de Dios','Moquegua','Pasco','Piura',
+    'Puno','San Martín','Tacna','Tumbes','Ucayali'
+  ];
+
+  function normalizarDepartamento(texto) {
+    return String(texto || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toUpperCase();
+  }
+
+  function identificarDepartamento(registro) {
+    const descripcion = normalizarDepartamento(registro.descripcion);
+    const encontrados = nombresDepartamentos.filter(nombre => {
+      const patron = normalizarDepartamento(nombre)
+        .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+      const expresion = new RegExp(
+        '\\bDEPARTAMENTO\\s+(?:DE|DEL)\\s+' + patron + '\\b'
+      );
+
+      return expresion.test(descripcion);
+    });
+
+    return encontrados.length === 1 ? encontrados[0] : 'SIN_IDENTIFICAR';
+  }
   function render() {
     const q = input.value.trim().toLocaleLowerCase('es');
     const filtered = rows.filter(r => (!cut.checked || r.en_ultimo_corte) &&
+      (!department.value || identificarDepartamento(r) === department.value) &&
       [r.entidad, r.nomenclatura, r.descripcion].some(v => v.toLocaleLowerCase('es').includes(q)));
     const pages = Math.max(1, Math.ceil(filtered.length / 25));
     page = Math.min(page, pages - 1);
@@ -76,6 +110,7 @@ function radarSieUrlConsulta(nomenclatura) {
   }
   input.addEventListener('input', () => { page = 0; render(); });
   cut.addEventListener('change', () => { page = 0; render(); });
+  department.addEventListener('change', () => { page = 0; render(); });
   document.getElementById('seace-prev').onclick = () => { page--; render(); };
   document.getElementById('seace-next').onclick = () => { page++; render(); };
   fetch('data/seace.json', {cache: 'no-cache'}).then(async response => {
@@ -90,5 +125,3 @@ function radarSieUrlConsulta(nomenclatura) {
     host.querySelectorAll('input,button').forEach(el => { el.disabled = true; });
   });
 })();
-
-
