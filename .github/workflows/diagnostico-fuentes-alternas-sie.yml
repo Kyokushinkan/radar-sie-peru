@@ -1,0 +1,74 @@
+name: Diagnostico fuentes alternativas SIE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar-fuentes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Comprobar conectividad oficial
+        shell: bash
+        run: |
+          set -uo pipefail
+
+          for fuente in portal_oece datos_abiertos contrataciones_abiertas excel_alterno; do
+
+            case "$fuente" in
+              portal_oece)
+                URL="https://conosce.oece.gob.pe/buscador/"
+                ;;
+              datos_abiertos)
+                URL="https://bi.seace.gob.pe/pentaho/api/repos/%3Apublic%3Aportal%3Adatosabiertos.html/content?password=key&userid=public"
+                ;;
+              contrataciones_abiertas)
+                URL="https://contratacionesabiertas.oece.gob.pe/descargas"
+                ;;
+              excel_alterno)
+                URL="https://conosce.oece.gob.pe/buscador/assets/67ae6c4a/reportes/adjudicaciones/2026/ADJUDICACIONES_SIE2026_0.xlsx"
+                ;;
+            esac
+
+            FILE="fuente_${fuente}.bin"
+            rm -f "$FILE"
+
+            if http=$(curl -4 --http1.1 \
+              --location \
+              --silent \
+              --show-error \
+              --connect-timeout 10 \
+              --max-time 35 \
+              --max-filesize 25000000 \
+              --user-agent "Mozilla/5.0" \
+              --output "$FILE" \
+              --write-out "%{http_code}" \
+              "$URL" 2>error_fuente.txt); then
+              rc=0
+            else
+              rc=$?
+            fi
+
+            bytes=0
+            if [ -f "$FILE" ]; then
+              bytes=$(wc -c < "$FILE" | tr -d ' ')
+            fi
+
+            echo "RESULTADO_FUENTE=$fuente CURL=$rc HTTP=$http BYTES=$bytes"
+
+            if [ "$fuente" = "excel_alterno" ] && [ "$rc" -eq 0 ] && [ "$http" = "200" ]; then
+              if python3 -c 'import sys,zipfile,os; p=sys.argv[1]; assert os.path.getsize(p)>10000; z=zipfile.ZipFile(p); assert "xl/workbook.xml" in z.namelist()' "$FILE"; then
+                echo "EXCEL_ALTERNO_VALIDO=SI"
+                sha256sum "$FILE"
+              else
+                echo "EXCEL_ALTERNO_VALIDO=NO"
+              fi
+            fi
+
+          done
+
+          echo "DIAGNOSTICO_FUENTES_COMPLETADO=SI"
