@@ -145,13 +145,15 @@ function render(){
   depts.add(department(r));
 
   const name=r.proveedor_nombre_original||"No indicado";
-  const key=r.proveedor_id!=null?String(r.proveedor_id):"name:"+name;
-  if(!suppliers.has(key)){
-   suppliers.set(key,{name,count:0,cents:0});
+  if(name.trim().toUpperCase()!=="OFUSCADO"){
+    const key=r.proveedor_id!=null?String(r.proveedor_id):"name:"+name;
+    if(!suppliers.has(key)){
+     suppliers.set(key,{name,count:0,cents:0});
+    }
+    const s=suppliers.get(key);
+    s.count++;
+    s.cents+=cents;
   }
-  const s=suppliers.get(key);
-  s.count++;
-  s.cents+=cents;
 
   const date=String(r.fecha_buenapro||"");
   if(/^\d{4}-\d{2}/.test(date)){

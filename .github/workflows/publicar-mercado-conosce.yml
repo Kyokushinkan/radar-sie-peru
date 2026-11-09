@@ -43,7 +43,7 @@ jobs:
           url = (
               "https://conosce.osce.gob.pe/buscador/assets/"
               "67ae6c4a/reportes/adjudicaciones/2026/"
-              "CONOSCE_ADJUDICACIONES_SIE2026_0.xlsx"
+              "ADJUDICACIONES_SIE2026_0.xlsx"
           )
           path = Path("conosce_actual.xlsx")
           req = urllib.request.Request(

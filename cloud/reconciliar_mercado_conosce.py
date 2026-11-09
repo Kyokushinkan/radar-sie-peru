@@ -184,7 +184,7 @@ def main():
 
     audit_entry = {
         "fecha_utc": timestamp,
-        "fuente": "CONOSCE_ADJUDICACIONES_SIE2026_0.xlsx",
+        "fuente": "ADJUDICACIONES_SIE2026_0.xlsx",
         "nuevos": len(additions),
         "actualizados": len(updates),
         "historicos_ausentes_conservados": len(absent),
