@@ -1,0 +1,77 @@
+name: Diagnostico de conectividad CONOSCE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar-conectividad:
+    strategy:
+      fail-fast: false
+      matrix:
+        sistema:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+
+    runs-on: ${{ matrix.sistema }}
+    timeout-minutes: 5
+
+    steps:
+      - name: Probar fuente oficial
+        shell: bash
+        run: |
+          set -uo pipefail
+
+          URL="https://conosce.osce.gob.pe/buscador/assets/67ae6c4a/reportes/adjudicaciones/2026/ADJUDICACIONES_SIE2026_0.xlsx"
+
+          echo "RUNNER=${{ matrix.sistema }}"
+
+          PY=python3
+          if ! command -v python3 >/dev/null 2>&1; then
+            PY=python
+          fi
+
+          for familia in 4 6; do
+            FILE="prueba_ipv${familia}.xlsx"
+            echo "PROBANDO_IPV${familia}=SI"
+
+            rm -f "$FILE"
+
+            codigo=$(curl "-${familia}" \
+              --http1.1 \
+              --location \
+              --silent \
+              --show-error \
+              --connect-timeout 12 \
+              --max-time 35 \
+              --max-filesize 20971520 \
+              --user-agent "Mozilla/5.0" \
+              --output "$FILE" \
+              --write-out "%{http_code}" \
+              "$URL" 2>error_curl.txt)
+
+            resultado=$?
+
+            echo "CURL_EXIT_IPV${familia}=$resultado"
+            echo "HTTP_IPV${familia}=$codigo"
+
+            if [ "$resultado" -eq 0 ] && [ "$codigo" = "200" ]; then
+
+              if "$PY" -c 'import sys,os,zipfile; p=sys.argv[1]; z=zipfile.ZipFile(p); assert os.path.getsize(p)>10000; assert "xl/workbook.xml" in z.namelist(); print("XLSX_VALIDO_BYTES="+str(os.path.getsize(p)))' "$FILE"; then
+
+                echo "RESULTADO_IPV${familia}=PASS"
+              else
+                echo "RESULTADO_IPV${familia}=ARCHIVO_INVALIDO"
+              fi
+
+            else
+              echo "RESULTADO_IPV${familia}=SIN_CONEXION"
+              head -c 300 error_curl.txt || true
+              echo ""
+            fi
+          done
+
+          echo "DIAGNOSTICO_COMPLETADO=SI"
