@@ -267,6 +267,170 @@ async function init(){
 init();
 </script>
 
+
+<!-- RADAR_OECE_PROVISIONAL_V84 -->
+<section class="panel" id="oece-provisional-v84">
+<h2>OECE · Adjudicaciones recientes</h2>
+<p>Registros adicionales de SEACE V3, separados del histórico CONOSCE.
+Estado de origen: <strong>ADJUDICADO / pending</strong>.
+No acreditan consentimiento ni contrato.</p>
+<p class="small">Corte auditado: 08/11/2026. Los departamentos
+indicados son referenciales y requieren verificación territorial.</p>
+
+<div class="filters">
+<label>Buscar adjudicación OECE
+<input id="oece-v84-search" placeholder="Producto, entidad, proveedor o convocatoria">
+</label>
+<label>Departamento referencial
+<select id="oece-v84-dept">
+<option value="">Todos</option>
+</select>
+</label>
+</div>
+
+<div class="cards">
+<div class="card"><span>Ítems encontrados</span>
+<strong id="oece-v84-count">-</strong></div>
+<div class="card"><span>Monto adjudicado informado</span>
+<strong id="oece-v84-amount">-</strong></div>
+</div>
+
+<p class="status" id="oece-v84-status">Cargando OECE...</p>
+
+<div class="tablewrap">
+<table>
+<thead><tr>
+<th>Buena pro</th>
+<th>Convocatoria / Ítem</th>
+<th>Entidad</th>
+<th>Producto</th>
+<th>Proveedor / RUC</th>
+<th>Departamento referencial</th>
+<th>Estado OECE</th>
+<th class="right">Monto</th>
+</tr></thead>
+<tbody id="oece-v84-body"></tbody>
+</table>
+</div>
+<p class="small">Fuente: OECE / SEACE V3. Datos provisionales,
+no incluidos en los totales históricos CONOSCE.</p>
+</section>
+
+<script>
+(function(){
+"use strict";
+const get=id=>document.getElementById(id);
+const fmt=new Intl.NumberFormat("es-PE");
+const money=new Intl.NumberFormat("es-PE",{
+ minimumFractionDigits:2,maximumFractionDigits:2
+});
+const norm=v=>String(v??"").normalize("NFD")
+ .replace(/[\u0300-\u036f]/g,"").toLowerCase();
+
+let data=[];
+
+function departamento(r){
+ return r.entidad_departamento_referencial||"Sin verificar";
+}
+
+function render(){
+ const q=norm(get("oece-v84-search").value.trim());
+ const dep=get("oece-v84-dept").value;
+
+ const found=data.filter(r=>{
+  const haystack=norm([
+   r.codigo_convocatoria,
+   r.descripcion_item,
+   r.descripcion_proceso,
+   r.entidad_nombre_original,
+   r.proveedor_nombre_original,
+   r.proveedor_ruc
+  ].join(" "));
+
+  return (!q||haystack.includes(q))&&
+   (!dep||departamento(r)===dep);
+ });
+
+ const total=found.reduce(
+  (n,r)=>n+Number(r.monto_adjudicado_centimos||0),0
+ );
+
+ get("oece-v84-count").textContent=fmt.format(found.length);
+ get("oece-v84-amount").textContent="S/ "+money.format(total/100);
+
+ const body=get("oece-v84-body");
+ body.replaceChildren();
+
+ for(const r of found){
+  const tr=document.createElement("tr");
+  const values=[
+   r.fecha_buenapro,
+   r.codigo_convocatoria+" / "+r.numero_item,
+   r.entidad_nombre_original,
+   r.descripcion_item,
+   r.proveedor_nombre_original+" / "+r.proveedor_ruc,
+   departamento(r),
+   r.detalle_estado_oece+" / "+r.estado_oece,
+   "S/ "+money.format(r.monto_adjudicado_centimos/100)
+  ];
+
+  values.forEach((v,i)=>{
+   const td=document.createElement("td");
+   td.textContent=String(v??"");
+   if(i===7)td.className="right";
+   tr.appendChild(td);
+  });
+
+  body.appendChild(tr);
+ }
+
+ get("oece-v84-status").textContent=
+  fmt.format(found.length)+" de "+fmt.format(data.length)+
+  " adjudicaciones OECE provisionales.";
+}
+
+async function init(){
+ try{
+  const response=await fetch(
+   "oece_adjudicaciones_provisionales.json?v=84",
+   {cache:"no-store"}
+  );
+
+  if(!response.ok)throw new Error("HTTP "+response.status);
+
+  const payload=await response.json();
+
+  if(!Array.isArray(payload.datos)||payload.datos.length!==31){
+   throw new Error("Cantidad OECE inesperada");
+  }
+
+  data=payload.datos;
+
+  const depts=[...new Set(data.map(departamento))]
+   .sort((a,b)=>a.localeCompare(b,"es"));
+
+  for(const dep of depts){
+   const option=document.createElement("option");
+   option.value=dep;
+   option.textContent=dep;
+   get("oece-v84-dept").appendChild(option);
+  }
+
+  get("oece-v84-search").addEventListener("input",render);
+  get("oece-v84-dept").addEventListener("change",render);
+
+  render();
+ }catch(e){
+  get("oece-v84-status").textContent="ERROR OECE: "+e.message;
+  get("oece-v84-status").className="status error";
+ }
+}
+
+init();
+})();
+</script>
+<!-- FIN_RADAR_OECE_PROVISIONAL_V84 -->
+
 <section class="panel" id="biblioteca-fichas">
 <h2>Biblioteca de fichas tecnicas SIE</h2>
 <p>Consulta productos, codigos y versiones registradas.
