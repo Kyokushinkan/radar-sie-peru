@@ -40,7 +40,7 @@ jobs:
 
             rm -f "$FILE"
 
-            codigo=$(curl "-${familia}" \
+            if codigo=$(curl "-${familia}" \
               --http1.1 \
               --location \
               --silent \
@@ -51,9 +51,11 @@ jobs:
               --user-agent "Mozilla/5.0" \
               --output "$FILE" \
               --write-out "%{http_code}" \
-              "$URL" 2>error_curl.txt)
-
-            resultado=$?
+              "$URL" 2>error_curl.txt); then
+              resultado=0
+            else
+              resultado=$?
+            fi
 
             echo "CURL_EXIT_IPV${familia}=$resultado"
             echo "HTTP_IPV${familia}=$codigo"
