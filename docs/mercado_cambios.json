@@ -12712,5 +12712,2848 @@
         "numero_item": 5
       }
     ]
+  },
+  {
+    "fecha_utc": "2026-11-12T23:00:36.274290+00:00",
+    "fuente": "ADJUDICACIONES_SIE2026_0.xlsx",
+    "nuevos": 112,
+    "actualizados": 228,
+    "historicos_ausentes_conservados": 34,
+    "cambios": [
+      {
+        "codigo_convocatoria": "1215849",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1216107",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1216107",
+        "numero_item": 7,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1216107",
+        "numero_item": 11,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1216107",
+        "numero_item": 13,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1219453",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 3,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 4,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 5,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 7,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 8,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1226139",
+        "numero_item": 9,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235090",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235090",
+        "numero_item": 4,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235090",
+        "numero_item": 5,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235090",
+        "numero_item": 6,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235090",
+        "numero_item": 10,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235183",
+        "numero_item": 4,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235204",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235204",
+        "numero_item": 3,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235204",
+        "numero_item": 4,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235204",
+        "numero_item": 6,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235204",
+        "numero_item": 7,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235204",
+        "numero_item": 8,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1235833",
+        "numero_item": 8,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1238507",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "EDIGIS S.A.C.",
+            "despues": "EGUSQUIZA ARAUCO ALEXIS MARTIN"
+          },
+          "fecha_buenapro": {
+            "antes": "2026-09-28",
+            "despues": "2026-11-05"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 60000000,
+            "despues": 78752000
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1239322",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1239428",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "NOLBERTO HUAYANA YOVANA",
+            "despues": "LUJAD C&S SOCIEDAD ANONIMA CERRADA"
+          },
+          "fecha_buenapro": {
+            "antes": "2026-09-24",
+            "despues": "2026-11-05"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 74550000,
+            "despues": 75080000
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1239808",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1239808",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1239808",
+        "numero_item": 3,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1240136",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1240846",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1241831",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1242036",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1242536",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1242990",
+        "numero_item": 3,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1243115",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1244455",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1244865",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1245063",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "PAREJA HUAMAN YOLANDA NOEMI",
+            "despues": "VELA ARBILDO WILSON HUMBERTO"
+          },
+          "fecha_buenapro": {
+            "antes": "2026-10-22",
+            "despues": "2026-11-06"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 21700000,
+            "despues": 22178090
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1245063",
+        "numero_item": 2,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "PAREJA HUAMAN YOLANDA NOEMI",
+            "despues": "FORZAMAT S.A.C."
+          },
+          "fecha_buenapro": {
+            "antes": "2026-10-22",
+            "despues": "2026-11-06"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 9140000,
+            "despues": 9150000
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1245063",
+        "numero_item": 3,
+        "diferencias": {
+          "fecha_buenapro": {
+            "antes": "2026-10-22",
+            "despues": "2026-11-06"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1245063",
+        "numero_item": 4,
+        "diferencias": {
+          "fecha_buenapro": {
+            "antes": "2026-10-22",
+            "despues": "2026-11-06"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1245601",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1245738",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1246861",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1247727",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1247788",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1248605",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1248799",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "ITCEN CONTRATISTAS Y ASOCIADOS S.A.C.",
+            "despues": "INNOVA A & Y S.R.L."
+          },
+          "fecha_buenapro": {
+            "antes": "2026-10-05",
+            "despues": "2026-11-06"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 12263310,
+            "despues": 12358650
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1248854",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1249464",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1249638",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1249884",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1249905",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1249967",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1249983",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250194",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250203",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250694",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250694",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250764",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250764",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250791",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1250791",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1251123",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1251596",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1251603",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1251660",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1252595",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1252765",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253063",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253209",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253313",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253541",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 3,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 5,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 6,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 7,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 10,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 12,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253580",
+        "numero_item": 13,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253651",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253778",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253838",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253927",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1253952",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254028",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254131",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "INGEFE INVERSIONES GENERALES E & F E.I.R.L.",
+            "despues": "PERU PRODUCTOS AGRICOLAS SAC"
+          },
+          "fecha_buenapro": {
+            "antes": "2026-10-14",
+            "despues": "2026-11-10"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 5500000,
+            "despues": 5544800
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254234",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254378",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254446",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254578",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254629",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254750",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1254826",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255022",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255044",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255101",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255111",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255169",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255222",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255242",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255344",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255469",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255484",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255496",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255496",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255580",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255667",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255766",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255813",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255832",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255832",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255838",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "QUISPE GUERRA ANGEL",
+            "despues": "ESTACION DE SERVICIOS PETROSUR S.A.C."
+          },
+          "fecha_buenapro": {
+            "antes": "2026-10-20",
+            "despues": "2026-11-09"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 9137700,
+            "despues": 9489150
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255862",
+        "numero_item": 1,
+        "diferencias": {
+          "proveedor_nombre_original": {
+            "antes": "VILSUR-KD E.I.R.L.",
+            "despues": "COMPANY PROYECT INGENIEROS E.I.R.L."
+          },
+          "fecha_buenapro": {
+            "antes": "2026-10-19",
+            "despues": "2026-11-06"
+          },
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Adjudicado"
+          },
+          "monto_adjudicado_centimos": {
+            "antes": 5900000,
+            "despues": 6000000
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255918",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1255951",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256176",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256176",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256176",
+        "numero_item": 5,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256230",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256345",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256362",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256376",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256445",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256531",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256543",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256546",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256546",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256546",
+        "numero_item": 3,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256566",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256625",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256645",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256700",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256722",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256729",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256729",
+        "numero_item": 2,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256729",
+        "numero_item": 4,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256729",
+        "numero_item": 5,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256729",
+        "numero_item": 6,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256772",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256795",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256806",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256815",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256817",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256818",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256906",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1256916",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257008",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257060",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257163",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257252",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257333",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257396",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257508",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257512",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257533",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257548",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257558",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257566",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257663",
+        "numero_item": 4,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257694",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257786",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257815",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257868",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257894",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257961",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257974",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1257987",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258104",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258140",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258146",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258188",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258189",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Consentido",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258221",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258281",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258308",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258350",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258417",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258455",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258458",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258459",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258503",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258529",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258558",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258635",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258684",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258709",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258739",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258748",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258760",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258851",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1258969",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259038",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259046",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259070",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259104",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259112",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259115",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259142",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259250",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259382",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259393",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259414",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259424",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259441",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259445",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259446",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259455",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259466",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259484",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259491",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259495",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259497",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259530",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259584",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Contratado"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259588",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259646",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259755",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1259996",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1260318",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      },
+      {
+        "codigo_convocatoria": "1260334",
+        "numero_item": 1,
+        "diferencias": {
+          "estado_item": {
+            "antes": "Adjudicado",
+            "despues": "Consentido"
+          }
+        }
+      }
+    ],
+    "claves_nuevas": [
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 2
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 3
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 4
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 5
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 6
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 7
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 8
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 9
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 10
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 11
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 12
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 13
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 14
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 15
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 16
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 17
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 18
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 19
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 20
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 21
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 22
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 23
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 24
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 25
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 26
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 27
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 28
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 29
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 30
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 31
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 32
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 33
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 34
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 35
+      },
+      {
+        "codigo_convocatoria": "1222834",
+        "numero_item": 36
+      },
+      {
+        "codigo_convocatoria": "1257341",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1257637",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1257831",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1257871",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1258567",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1258659",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1258875",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1259240",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1259431",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1259812",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1259866",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1259875",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260019",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260158",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260402",
+        "numero_item": 2
+      },
+      {
+        "codigo_convocatoria": "1260454",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260576",
+        "numero_item": 7
+      },
+      {
+        "codigo_convocatoria": "1260583",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260602",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260737",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260784",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260793",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260793",
+        "numero_item": 2
+      },
+      {
+        "codigo_convocatoria": "1260920",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260964",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1260997",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261061",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261098",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261106",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261237",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261255",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261260",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261262",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261263",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261325",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261339",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261350",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261353",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261354",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261387",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261390",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261403",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261453",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261461",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261469",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261483",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261484",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261499",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261523",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261584",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261671",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261737",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261745",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261758",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261760",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261785",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261797",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261844",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261867",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261936",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261938",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1261981",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262042",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262095",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262142",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262196",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262211",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262328",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262495",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262496",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262577",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1262704",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1263333",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1263987",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1264152",
+        "numero_item": 1
+      },
+      {
+        "codigo_convocatoria": "1264441",
+        "numero_item": 1
+      }
+    ]
   }
 ]
